@@ -38,7 +38,7 @@
         <header> is a semantic element: it works exactly like <div>, but it gives information about the role of the code below.
         The "row" class is used for the Bootstrap grid.
       -->
-      <header class="row resume-header">
+      <header class="resume-header d-flex">
         <!--
           A container to wrap around the portrait and align it. We use Bootstrap grid columns.
           This constrains the portrait to columns of decreasing sizes
@@ -48,14 +48,50 @@
             "w-100" makes sure the image takes the full width of the column it's in
             "rounded-circle" cuts a circle around the image
           -->
-          <img class="w-100 rounded-circle my-3" src="images/portrait.jpg.jpg" alt="Portrait of Firstname Lastname" width="160">
+          <img class="w-100 rounded-circle my-3" src="images/portrait.jpg.jpg" alt="Portrait of Firstname Lastname" width="160">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         </div>
         <!--
           A container to wrap around your name and tagline. Full-width at small size, then columns of increasing size.
         -->
-        <div class="my-3 header-content float-end">
+        <div class="my-3">
           <h1 class="fw-bolder">Joshua Abraham</h1>
-          <h5 class="fst-italic tagline">Expert in social marketing.</h5>
+          <h6 class="fst-italic tagline">Expert in social marketing.</h6>
+			<section class="my-3 aside-section">
+            <h5><strong>Contact</strong></h5>
+            <!--
+              A list of all your contact details.
+              There are more icons in the images/icons folder, have a look if you want to add your LinkedIn or TikTok profile.
+              Be careful and only put channels through which you really want to be contacted.
+              If your phone number is your personal one, you may want to remove it!
+            -->
+            <ul class="contact-list list-unstyled">
+              <li class="contact-item">
+                <a class="d-flex align-items-center" href="mailto:email@buas.nl" target="_blank">
+                  <img class="contact-icon" src="images/icons/envelope.svg" alt="Email">
+                  joshua_abra@hotmail.com
+                </a>
+              </li>
+              <li class="contact-item">
+                <a class="d-flex align-items-center" href="https://www.linkedin.com/learning/?u" target="_blank">
+                  <img class="contact-icon" src="images/icons/facebook.svg" alt="Facebook">
+                  Linkedln Profile
+                </a>
+              </li>
+              <li class="contact-item">
+                <a class="align-items-center" href="https://github.com" target="_blank">
+                  <img class="contact-icon" src="images/icons/github.svg" alt="LinkedIn">
+                  GitHub Profile
+                </a>
+              </li>
+              <li class="contact-item">
+                <a class="d-flex align-items-center" href="tel:+31621999749" target="_blank">
+                  <img class="contact-icon" src="images/icons/phone.svg" alt="Mobile Phone">
+                  +31 6 21999749
+                </a>
+              </li>
+            </ul>
+          </section>
+
         </div>
       </header>
 
@@ -86,16 +122,17 @@
               <li class="biography-item row mb-2">
                 <!-- We're using a grid inside a grid so we can align logos and text -->
                 <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
-                  <img class="biography-logo mw-100 d-block mx-auto" src="images/employers/Laugeman_Logo_naam_slogan.jpg" alt="Company logo" width="80">
+                  <img class="biography-logo mw-100 d-block mx-auto" src="images/employers/laugeman_logo_naam_slogan-Recovered1.jpg" alt="Company logo" width="120" height="50">
                 </div>
                 <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
                   <h4>Production Assistant, Production Company</h4>
-                  <h5>April&ndash;July 2019</h5>
+                  <h5>September 2016- January 2017</h5>
                   <!-- Use the list below to talk about your achievements -->
                   <ul class="biography-details list-unstyled">
-                    <li>Coordinated shootings in studio and on location</li>
-                    <li>Liaised with local authorities and with suppliers</li>
-                    <li>Part of my studies at Breda University of Applied Sciences</li>
+					  <h6> <em>Worked as a dental assistant intern. In this position I performed the following:</em></h6>
+                    <li>Patient care&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;</li>
+                    <li>Assisting the dentist&nbsp;</li>
+                    <li>Aministrative work</li>
                   </ul>
                 </div>
               </li>
@@ -104,12 +141,12 @@
               <li class="biography-item row mb-2">
                 <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
                 <!-- We're using a grid inside a grid so we can align logos and text -->
-                  <img class="biography-logo mw-100 d-block mx-auto" src="images/employers/vapiano.jpg" alt="Company logo" width="80">
+                  <img class="biography-logo mw-100 d-block mx-auto" src="images/employers/vapiano1.jpg" alt="Company logo" width="120" height="70">
                 </div>
                 <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
                   <h4>Vapiano's, Tilburg&nbsp;</h4>
                   <h5>2017 - now</h5>
-				  <h6>Task with several fuctions, including cooking, serving concurrently and bar tending</h6>
+				  <h6> <em>Task with several fuctions, including cooking, serving concurrently and bar tending</em></h6>
                   <!-- This entry doesn't have a list of achievements, but you can copy-paste the one from above -->
                 </div>
               </li>
@@ -126,22 +163,23 @@
               <!-- Top item in education. And by "top", I mean a Bachelor in Creative Business at BUas. -->
               <li class="biography-item row mb-2">
                 <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
-                  <img class="biography-logo mw-100 d-block mx-auto" src="images/schools/koningWillem.jpg" alt="School logo" width="120">
+                  <img class="biography-logo mw-100 d-block mx-auto" src="images/schools/koningWillem.jpg" alt="School logo" width="80">
                 </div>
                 <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
                   <h4>Degree in Dental Assistant, s'Hertogensbosch, Koning Willem 1 College</h4>
                   <h5>2015 – 2018</h5>
+					<h6> <em>Graduated with a dental assistant degree. I have learned much about:</em></h6>
                   <!-- Use the list below to talk about minors, exchanges, extra-curricular activities. -->
                   <ul class="biography-details list-unstyled">
                     <li>Dentistry&nbsp;&nbsp;</li>
                     <li>Communication&nbsp; training (English, Dutch)&nbsp; &nbsp;&nbsp;</li>
-                    <li>&nbsp;</li>
+                    <li>Lab Work&nbsp;</li>
                   </ul>
                 </div>
               </li>
   <li class="biography-item row mb-2">
                 <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
-                  <img class="biography-logo mw-100 d-block mx-auto" src="images/schools/logo-buas.svg" alt="School logo" width="120">
+                  <img class="biography-logo mw-100 d-block mx-auto" src="images/schools/logo-buas.svg" alt="School logo" width="200" height="50">
                 </div>
                 <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
                   <h4>BA in Creative Business, Breda University of Applied Sciences</h4>
@@ -157,7 +195,7 @@
               <!-- 2nd item in education -->
               <li class="biography-item row mb-2">
                 <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
-                  <img class="biography-logo mw-100 d-block mx-auto" src="images/schools/avans.jpg" alt="School logo" width="80">
+                  <img class="biography-logo mw-100 d-block mx-auto" src="images/schools/avans.jpg" alt="School logo" width="80" height="50">
                 </div>
                 <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
                   <h4>BA in Communication and Multimedia Design, Avans Breda&nbsp;</h4>
@@ -199,13 +237,13 @@
                 </a>
               </li>
               <li class="contact-item">
-                <a class="d-flex align-items-center" href=https://www.linkedin.com/learning/?u target="_blank">
+                <a class="d-flex align-items-center" href="https://www.linkedin.com/learning/?u" target="_blank">
                   <img class="contact-icon" src="images/icons/facebook.svg" alt="Facebook">
                   Linkedln Profile
                 </a>
               </li>
               <li class="contact-item">
-                <a class="align-items-center" href=https://github.com/ target="_blank">
+                <a class="align-items-center" href="https://github.com" target="_blank">
                   <img class="contact-icon" src="images/icons/github.svg" alt="LinkedIn">
                   GitHub Profile
                 </a>
@@ -270,9 +308,19 @@
             <ul class="skill-list list-unstyled">
               <li class="skill-item">Fitness&nbsp;</li>
               <li class="skill-item">Basketball&nbsp;</li>
+				<li class="skill-item">Gaming&nbsp;</li>
             </ul>
           </section>
 
+			 <section class="my-3 aside-section">
+            <h2>Projects</h2>
+            <ul class="skill-list list-unstyled">
+              <li class="skill-item">Spotlight&nbsp;</li>
+              <li class="skill-item">Pier15&nbsp;</li>
+			  <li class="skill-item">Bad Idea&nbsp;</li>
+            </ul>
+          </section>
+			
         </aside>
       </div>
     </div>
